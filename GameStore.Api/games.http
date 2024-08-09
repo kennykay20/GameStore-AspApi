@@ -1,0 +1,32 @@
+GET http://localhost:5164
+
+###
+GET http://localhost:5164/v1/api/games
+
+###
+GET http://localhost:5164/v1/api/games/11
+
+###
+DELETE http://localhost:5164/v1/api/games/11
+
+###
+POST http://localhost:5164/v1/api/games
+content-type: application/json
+
+{
+  "name": "Street Fighter V",
+  "genreId": "2",
+  "price": 15.99,
+  "releaseDate": "2023-11-23"
+}
+
+###
+PUT http://localhost:5164/v1/api/games/1
+Content-Type: application/json
+
+{
+  "name": "Champions League",
+  "genreId": 5,
+  "price": 23.99,
+  "releaseDate": "1964-02-01"
+}
